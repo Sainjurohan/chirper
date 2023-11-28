@@ -20,10 +20,6 @@ class Chirp extends Model
         'created'=> ChirpCreated::class,
     ];
 
-    protected $dipachEvent = [
-        'created' => NewChirpCreated::class,
-    ];
-
     public function user(): BelongsTo{
         return $this->belongsTo(User::class);
     }
